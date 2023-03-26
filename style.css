@@ -1,0 +1,22 @@
+.accordion-button:hover{
+    background-color: rgba(241, 241, 13, 0.815);
+    color: black;
+}
+
+.accordion-item{
+    border:2px solid yellow;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: rgba(241, 241, 13, 0.815);
+    color: black;
+}
+
+#grupo-botones{
+    display: flex;
+    width: 100%;
+}
+
+#grupo-botones > button > img{
+    max-width: 150px;
+}
