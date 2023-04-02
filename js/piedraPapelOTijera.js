@@ -28,15 +28,15 @@ function juego(opcionUsuario){
     switch (resultado){
         case empate:
             alert('EMPATE ' + mostrarOpcionPc(opcionPc));
-            confirm('seguimos jugando?');
+            confirm('Seguimos jugando?');
         break;
         case ganador:
             alert('GANADOR ' + mostrarOpcionPc(opcionPc))
-            confirm('seguimos jugando?');
+            confirm('Seguimos jugando?');
         break;
         case perdedor:
             alert('PERDEDOR ' + mostrarOpcionPc(opcionPc))
-            confirm('seguimos jugando?');
+            confirm('Seguimos jugando?');
         break;
     }
 }
