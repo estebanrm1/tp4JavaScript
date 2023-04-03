@@ -11,55 +11,48 @@ let calculadora = {
     },
     resta:function(){
         calculadora.resultadoResta =(calculadora.numeroA - calculadora.numeroB);
-        document.write(`El resultado de la resta entre ${this.numeroA} menos ${this.numeroB} es ${this.resultadoResta}<br>`);
+        document.write(`${this.numeroA} - ${this.numeroB} = ${this.resultadoResta}<br>`);
     },
     division:function(){
         calculadora.resultadoDivision =(calculadora.numeroA / calculadora.numeroB);
-        document.write(`El resultado de la division entre ${this.numeroA} dividido ${this.numeroB} es ${this.resultadoDivision}<br>`);
+        document.write(`${this.numeroA} / ${this.numeroB} = ${this.resultadoDivision}<br>`);
     },
     multiplicacion:function(){
         calculadora.resultadoMultiplicacion =(calculadora.numeroA * calculadora.numeroB);
-        document.write(`El resultado de la multiplicacion entre ${this.numeroA} por ${this.numeroB} es ${this.resultadoMultiplicacion}<br>`);
+        document.write(`${this.numeroA} * ${this.numeroB} = ${this.resultadoMultiplicacion}<br>`);
     }
 } 
-
-if(confirm('Para iniciar una resta entre dos numeros pulse aceptar')){
-    calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
-    calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
-    calculadora.resta(calculadora.numeroA, calculadora.numeroB);
-}
-if(confirm('Para iniciar una resta entre dos numeros pulse aceptar')){
-    calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
-    calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
-    calculadora.resta(calculadora.numeroA, calculadora.numeroB);
-}
-if(confirm('Para iniciar una multiplicacion entre dos numeros pulse aceptar')){
-    calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
-    calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
-    calculadora.multiplicacion(calculadora.numeroA, calculadora.numeroB);
-}
-if(confirm('Para iniciar una multiplicacion entre dos numeros pulse aceptar')){
-    calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
-    calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
-    calculadora.multiplicacion(calculadora.numeroA, calculadora.numeroB);
-}
-if(confirm('Para iniciar una division entre dos numeros pulse aceptar')){
-    calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
-    calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
-    calculadora.division(calculadora.numeroA, calculadora.numeroB);
-}
-if(confirm('Para iniciar una division entre dos numeros pulse aceptar')){
-    calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
-    calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
-    calculadora.division(calculadora.numeroA, calculadora.numeroB);
-}
-if(confirm('Para iniciar una suma entre dos numeros pulse aceptar')){
-    calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
-    calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
-    calculadora.suma(calculadora.numeroA, calculadora.numeroB);
-}
-if(confirm('Para iniciar una suma entre dos numeros pulse aceptar')){
-    calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
-    calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
-    calculadora.suma(calculadora.numeroA, calculadora.numeroB);
+switch  (prompt(`Elija la operacion que desee realizar segun el numero correspondiente 
+1-SUMA
+2-RESTA 
+3-MULTIPLICACION 
+4-DIVISION`
+)) {
+    case '1':
+        confirm('Para iniciar una suma entre dos numeros pulse aceptar')
+            calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
+            calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
+            calculadora.suma(calculadora.numeroA, calculadora.numeroB);
+        break;
+    case '2':
+        confirm('Para iniciar una resta entre dos numeros pulse aceptar')
+            calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
+            calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
+            calculadora.resta(calculadora.numeroA, calculadora.numeroB);
+        break;
+    case '3':
+        confirm('Para iniciar una multiplicacion entre dos numeros pulse aceptar')
+            calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
+            calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
+            calculadora.multiplicacion(calculadora.numeroA, calculadora.numeroB);
+        break;
+    case '4':
+        confirm('Para iniciar una division entre dos numeros pulse aceptar')
+            calculadora.numeroA = parseInt(prompt('Ingrese un numero'));
+            calculadora.numeroB = parseInt(prompt('Ingrese otro numero'));
+            calculadora.division(calculadora.numeroA, calculadora.numeroB);
+        break;
+    default :
+        alert('Ingrese un numero valido');
+        break;
 }

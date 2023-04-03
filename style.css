@@ -1,5 +1,9 @@
 /****** Estilo pagina principal  ********/
-
+table, th, td{
+    border: solid 1px yellow;
+    text-align: center;
+    padding: 10px;
+}
 
 .accordion-button:hover{
     background-color: rgba(241, 241, 13, 0.815);

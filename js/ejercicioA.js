@@ -11,15 +11,23 @@ let persona = {
         Mis hobbies son: ${this.hobbies}</p>`);
     },
     agregarHobbie:function(hobbieNuevo) {
-        persona.hobbies +=',' + hobbieNuevo
-        document.write(`<p>Mis hobbies son: ${this.hobbies}</p>`)
+        this.hobbies.push(hobbieNuevo);
     },
-    borrarHobbie: function(hobbieparaBorrar){
-        persona.hobbies -= hobbieparaBorrar;
-        document.write(persona.hobbies);
-    }
+    buscarHobbie: (hobbie)=>{
+        let busquedaHobbie = persona.hobbies.find(hobbie_ => hobbie_.includes(hobbie));
+        document.write(`<p>${ busquedaHobbie === undefined ? 'Hobbie no encontrado' : (`Se encontro el hobbie: ${busquedaHobbie}`)}</p>`)
+    },
+    borrarHobbie:function(){
+        this.hobbies.shift()
+    },
 }
+
+
 
 persona.presentarPersona();
 persona.agregarHobbie(prompt('Agregar hobbie a Juan'));
-persona.borrarHobbie(prompt('Borremos un hobbie a juan'));
+persona.agregarHobbie(prompt('Agregar hobbie a Juan'));
+persona.agregarHobbie(prompt('Agregar hobbie a Juan'));
+persona.borrarHobbie();
+document.write(`<p>Mis hobbies son: ${persona.hobbies}</p>`)
+persona.buscarHobbie('viajar')
