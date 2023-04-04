@@ -27,13 +27,16 @@ function juego(opcionUsuario){
     const resultado = calcResultado(opcionUsuario, opcionPc)
     switch (resultado){
         case empate:
-            alert('EMPATE ' + mostrarOpcionPc(opcionPc))
+            alert('EMPATE ' + mostrarOpcionPc(opcionPc));
+            confirm('Seguimos jugando?');
         break;
         case ganador:
             alert('GANADOR ' + mostrarOpcionPc(opcionPc))
+            confirm('Seguimos jugando?');
         break;
         case perdedor:
             alert('PERDEDOR ' + mostrarOpcionPc(opcionPc))
+            confirm('Seguimos jugando?');
         break;
     }
 }

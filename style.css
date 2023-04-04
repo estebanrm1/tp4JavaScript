@@ -1,3 +1,10 @@
+/****** Estilo pagina principal  ********/
+table, th, td{
+    border: solid 1px yellow;
+    text-align: center;
+    padding: 10px;
+}
+
 .accordion-button:hover{
     background-color: rgba(241, 241, 13, 0.815);
     color: black;
@@ -12,6 +19,24 @@
     color: black;
 }
 
+/******   Estilo ejercicios extras     *******/
+
+#accordionx-button:hover{
+    background-color: rgb(214, 79, 37);
+    color: black;
+}
+
+#accordionx-item{
+    border:1px solid  rgb(214, 79, 37);
+}
+
+#accordionx-button:not(.collapsed){
+    background-color: rgb(214, 79, 37);
+    color: black;
+}
+
+/******  Estilo botones piedra papel o tijera   *****/
+
 #grupo-botones{
     display: flex;
     width: 100%;
@@ -19,4 +44,12 @@
 
 #grupo-botones > button > img{
     max-width: 150px;
+}
+
+#grupo-botones > button{
+    border-radius: 10px;
+}
+
+#grupo-botones > button:hover{
+    transform: scale(1.2);
 }
