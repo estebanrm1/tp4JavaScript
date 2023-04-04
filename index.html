@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords"
-        content="Funciones de Javascript, Trabajo practico 4, Javascript, Funciones, RollingCode, Modulo 2, comision 42i" />
+        content="Funciones de Javascript, Trabajo practico 4, Javascript, Objetos, RollingCode, Modulo 2, comision 42i" />
     <meta name="description" content="Trabajo practico 4 Javascript" />
     <meta name="author" content="Esteban Molina" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -41,15 +41,14 @@
                     <h2 class="accordion-header" id="heading1x">
                         <button class="accordion-button collapsed" id="accordionx-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse1x" aria-expanded="false" aria-controls="collapse1x">
-                            Ejercicio nº 1
+                            Ejercicio nº A
                         </button>
                     </h2>
                     <div id="collapse1x" class="accordion-collapse collapse" aria-labelledby="heading1x"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p>Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
-                            </p>
-                            <a href="./pages/ejercicio7.html">Solución</a>
+                            <p>Crear un objeto persona que tenga las propiedades: nombre, apellido, edad, un valor verdadero o falso que indique si es estudiante y una lista de hobbies, este objeto debe contener los métodos para presentar a la persona, el cual mostrará todos los datos, y los métodos agregar, borrar y buscar un hobbie.Agregar por lo menos 3 hobbies y mostrarlos por pantalla, luego buscar el hobbie ‘viajar’ e indicar si la persona lo tiene o no. Por ultimo eliminar el primer hobbie y volver a mostrar todos por pantalla.</p>
+                            <a href="./pages/ejercicioA.html">Solución</a>
                         </div>
                     </div>
                 </article>
@@ -57,15 +56,15 @@
                     <h2 class="accordion-header" id="heading2x">
                         <button class="accordion-button collapsed" id="accordionx-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse2x" aria-expanded="false" aria-controls="collapse2x">
-                            Ejercicio nº 2
+                            Ejercicio nº B
                         </button>
                     </h2>
                     <div id="collapse2x" class="accordion-collapse collapse" aria-labelledby="heading2x"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p>Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
+                            <p>Crear un objeto calculadora, con las propiedades y métodos necesarios para realizar las operaciones de suma, resta, multiplicación y división. Mostrar por pantalla 2 operaciones con cada método.
                             </p>
-                            <a href="./pages/ejercicio7.html">Solución</a>
+                            <a href="./pages/ejercicioB.html">Solución</a>
                         </div>
                     </div>
                 </article>
@@ -73,15 +72,21 @@
                     <h2 class="accordion-header" id="heading3x">
                         <button class="accordion-button collapsed" id="accordionx-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse3x" aria-expanded="false" aria-controls="collapse3x">
-                            Ejercicio nº 3
+                            Ejercicio nº C
                         </button>
                     </h2>
                     <div id="collapse3x" class="accordion-collapse collapse" aria-labelledby="heading3x"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p>Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
+                            <p>Con el siguiente array de objetos, crear una funcion que permita dibujar una tabla con las columnas Producto - categoria - precio. Realizar las siguientes tareas:
+                                <ul>
+                                <li>Mostrar la tabla completa</li> 
+                                <li>filtrar el arreglo de productos por ‘Protectores solares' y mostrar la tabla filtrada.</li>
+                                <li>Buscar un producto serum y mostrarlo por pantalla.</li>
+                                <li>Buscar un producto 'Bruma’ y mostrar un mensaje adecuado para el usuario si el producto no existe en el array.</li>
+                                </ul>
                             </p>
-                            <a href="./pages/ejercicio7.html">Solución</a>
+                            <a href="./pages/ejercicioC.html">Solución</a>
                         </div>
                     </div>
                 </article>
@@ -98,7 +103,7 @@
                     <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
                         data-bs-parent="#ejerciciosTP">
                         <div class="row accordion-body"> 
-                            <p>Crear un array llamado meses y que almacene el nombre de los doce meses del año. Mostrar por pantalla en forma de lista los doce nombres del arreglo.</p>
+                            <p>Crea un objeto llamado auto que tenga algunas características como el color, marca, modelo y si está encendido o apagado. Crea los métodos necesarios para permitir encender y apagar el auto.</p>
                             <a href="./pages/ejercicio1.html">Solución</a>
                         </div>
                     </div>
@@ -113,15 +118,17 @@
                     <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p> Crear un script que solicite al usuario mediante un prompt el nombre de ciudades y almacenarlas en un arreglo, cuando el usuario selecciona cancelar se debe mostrar el arreglo generado, luego realizar las siguientes acciones:
+                            <p>Escribe un programa que cree un objeto "cuenta" con las siguientes propiedades:
                                 <ul>
-                                    <li>Mostrar la longitud del arreglo.</li>
-                                    <li>Mostrar en el documento web los ítems de las posiciones primera, tercera y última.</li>
-                                    <li>Añade en última posición la ciudad de París.</li>
-                                    <li>Escribe por pantalla el elemento que ocupa la segunda posición.</li> 
-                                    <li>Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.</li> 
+                                    <li>Una propiedad titular con el valor "Alex".</li>
+                                    <li>Una propiedad saldo, teniendo como valor inicial 0.</li>
+                                    <li>Un método ingresar() que permita añadir dinero a la cuenta, pasando la cantidad como parámetro</li>
+                                    <li>Un método extraer() que permita retirar la cantidad pasada como parámetro</li> 
+                                    <li>Un método informar() que retorne la información del estado de la cuenta.</li> 
                                 </ul>
                                 </p>
+                                <p>Utiliza este objeto para mostrar la descripción, ingresar y extraer dinero y volver a mostrar la descripción del estado de la cuenta.</p>
+                                
                             <a href="./pages/ejercicio2.html">Solución</a>
                         </div>
                     </div>
@@ -136,7 +143,7 @@
                     <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p>Escribir un script que simule el lanzamiento de dos dados. Hacer uso de la función Math.random para obtener números aleatorios entre 1 y 6 para cada uno de los lanzamientos de los dados. Sumar el resultado de lanzar dos dados y anotar en un array el número de apariciones de dicha suma, repitiendo 50 veces esta operación.
+                            <p>Escribe una clase que permita crear distintos objetos “rectángulos”, con las propiedades de alto y ancho, mas los métodos necesarios para modificar y mostrar sus propiedades, calcular el perímetro y el área
                             </p>
                             <a href="./pages/ejercicio3.html">Solución</a>
                         </div>
@@ -152,7 +159,9 @@
                     <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p> Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.
+                            <p> Escribe una clase Producto para crear objetos. Estos objetos, deben presentar las propiedades código, nombre y precio, además del método imprime datos, el cual escribe por pantalla los valores de sus propiedades.
+                                Posteriormente, cree tres instancias de este objeto y guárdalas en un array.
+                                Por último, utilice el método imprime datos para mostrar por pantalla los valores de los tres objetos instanciados.                                
                             </p>
                             <a href="./pages/ejercicio4.html">Solución</a>
                         </div>
@@ -168,8 +177,17 @@
                     <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p> Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
+                            <p> Crea una clase llamada Persona que siga las siguientes condiciones:
+                                Sus propiedades son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura, año de nacimiento. Si quieres añadir alguna propiedad extra puedes hacerlo.
+                                Los métodos que se debe poder utilizar  son:
+                                mostrarGeneracion: este método debe mostrar un mensaje indicando a qué generación pertenece la persona creada y cual es el rasgo característico de esta generación.
+                                Para realizar este método tener en cuenta la siguiente tabla de generaciones:
+                                (Imagen Tabla de generaciones*)
                             </p>
+                            <p>esMayorDeEdad: indica si es mayor de edad, devuelve un mensaje indicando que la persona es mayor de edad.
+                                mostrarDatos: devuelve toda la información del objeto.
+                                generaDNI(): genera un número aleatorio de 8 cifras.
+                                </p>
                             <a href="./pages/ejercicio5.html">Solución</a>
                         </div>
                     </div>
@@ -184,8 +202,13 @@
                     <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p>Solicitar por pantalla al usuario ingresar el valor de los lados de un rectángulo, luego crear una función para calcular su perímetro y mostrarlo por pantalla.
-                            <li>La fórmula del perímetro  es p = 2*(a +b)</li> 
+                            <p> Crear una clase Libro que contenga al menos las siguientes propiedades:
+                            <li>ISBN</li> 
+                            <li>Título</li>
+                            <li>Autor</li>
+                            <li>Número de páginas</li>
+                            Crear sus respectivos métodos get y set correspondientes para cada propiedad. Crear el método mostrarLibro() para mostrar la información relativa al libro con el siguiente formato:<br>“El libro xxx con ISBN xxx creado por el autor xxx tiene páginas xxx”<br>Crear al menos 2 objetos libros y utilizar el método mostrarLibro();
+                            Por último, indicar cuál de los 2 objetos “libros” tiene más páginas.                            
                             </p>
                             <a href="./pages/ejercicio6.html">Solución</a>
                         </div>
@@ -201,7 +224,21 @@
                     <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p>Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
+                            <p> Nos piden realizar una agenda telefónica de contactos.</p>
+                            <p>Un contacto está definido por un nombre y un teléfono. Se considera que un contacto es igual a otro cuando sus nombres son iguales.</p>
+                            <p>Una agenda de contactos está formada por un conjunto de contactos. Se podrá crear de dos formas, indicando nosotros el tamaño o con un tamaño por defecto (10).</p>
+                            <p>Los métodos de la agenda serán los siguientes:
+                                <ul>
+                                    <li>aniadirContacto(Contacto): Añade un contacto a la agenda, sino la agenda no puede almacenar más contactos indicar por pantalla.
+                                    </li>
+                                    <li>existeContacto(Contacto): indica si el contacto pasado existe o no.</li>
+                                    <li>listarContactos(): Lista toda la agenda</li>
+                                    <li>buscarContacto(nombre): busca un contacto por su nombre y muestra su teléfono.</li>
+                                    <li>eliminarContacto(Contacto c): elimina el contacto de la agenda, indica si se ha eliminado o no por pantalla</li>
+                                    <li>agendaLlena(): indica si la agenda está llena.</li>
+                                    <li>huecosLibres(): indica cuántos contactos más podemos ingresar.</li>
+                                </ul>
+                                Crea un menú con opciones que serán seleccionadas por el usuario usando un prompt, las salidas de las operaciones seleccionadas por el usuario se pueden mostrar en pantalla y  por consola.
                             </p>
                             <a href="./pages/ejercicio7.html">Solución</a>
                         </div>
@@ -217,7 +254,7 @@
                     <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p>Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
+                            <p> Crea una clase llamada "Persona" que tenga las propiedades "nombre", "edad" y "profesión", y los métodos "saludar" y "despedirse". Luego, crea dos objetos de la clase "Persona" con diferentes valores para sus propiedades y llama a sus métodos "saludar" y "despedirse".
                             </p>
                             <a href="./pages/ejercicio7.html">Solución</a>
                         </div>
@@ -233,8 +270,7 @@
                     <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p>Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
-                            </p>
+                            <p> Crea una clase llamada "Animal" que tenga las propiedades "nombre" y "edad", y el método "emitirSonido". Luego, crea dos clases hijas llamadas "Perro" y "Gato" que hereden de "Animal" y tengan su propio método "emitirSonido". Finalmente, crea dos objetos, uno de la clase "Perro" y otro de la clase "Gato", y llama a sus métodos "emitirSonido" para verificar que cada animal emite el sonido adecuado.</p>
                             <a href="./pages/ejercicio7.html">Solución</a>
                         </div>
                     </div>
@@ -249,7 +285,10 @@
                     <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
                         data-bs-parent="#ejerciciosTP">
                         <div class="accordion-body">
-                            <p>Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
+                            <p> Crear una clase aeropuerto con las propiedades nombreAeropuerto y lista de aviones, esta clase deberá contener el método agregarAvion, el cual recibirá un objeto de tipo Avión, además de un método buscarAvion el cual recibirá el nombre de un avión y devolverá información en caso de encontrarlo, si no lo encontró indicar con un mensaje.
+                                Por su parte los aviones tendrán las propiedades: nombre, capacidad, destino, lista de pasajeros. Los aviones tienen el método abordar el cual permite que un pasajero suba al avión solo si hay capacidad disponible en el mismo, caso contrario mostrar un mensaje que indique que el avión está lleno. <br>
+                                Crear un objeto de tipo aeropuerto llamado "Aeropuerto Internacional", crear 3 objetos aviones con diferentes destinos. Agregar los 3 aviones al aeropuerto, buscar un avión y usar el método abordar.
+                                
                             </p>
                             <a href="./pages/ejercicio7.html">Solución</a>
                         </div>
